@@ -5,8 +5,8 @@
 #' Note: BE CAREFUL! Not always a good idea.
 
 # install.packages("credentials")
-credentials::git_credential_update()
-
+# credentials::git_credential_update()
+credentials::set_github_pat()
 # This script commits to github.
 require(gert)
 
