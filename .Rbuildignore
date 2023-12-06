@@ -4,3 +4,6 @@
 ^.Rhistory
 ^z$
 ^docs$
+^solar_stats\.Rcheck$
+^solar_stats.*\.tar\.gz$
+^solar_stats.*\.tgz$

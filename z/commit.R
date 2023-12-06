@@ -4,6 +4,9 @@
 #' @description Helpful script for speedy committing of ALL changes to github. 
 #' Note: BE CAREFUL! Not always a good idea.
 
+# install.packages("credentials")
+credentials::git_credential_update()
+
 # This script commits to github.
 require(gert)
 
