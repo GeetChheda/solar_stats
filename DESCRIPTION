@@ -1,16 +1,20 @@
-Package: solar_stats
+Package: solarstats
 Version: 0.1.0
 Date: 2023-11-01
 Title: Demo package for Publicly Available R Package Tool
 Authors@R: c(
-  person("Fraser", "Timothy", email = "tmf77@cornell.edu", role = c("aut", "cre")),
-  person("Julia", "Fakeperson", email = "myemail@cornell.edu", role = "aut"),
-  person("Javier", "Fakeperson", email = "myemail2@cornell.edu", role = "ctb") )
-Author: Timothy Fraser [aut, cre],
-  Julia Fakeperson [aut],
-  Javier Fakeperson [ctb]
-Maintainer: Timothy Fraser <tmf77@cornell.edu>
-Description: One-line description for package goes here. Make sure this script ends with an extra blank line after `Imports:`
+  person("Chheda", "Geet", email = "gac222@cornell.edu", role = c("aut", "cre")),
+  person("Shenoy", "Sagar", email = "ss3675@cornell.edu", role = "aut"),
+  person("Chaturvedi", "Animesh", email = "ac2834@cornell.edu", role = "aut"),
+  person("Joshi", "Ishwari", email = "ij46@cornell.edu", role = "aut"),
+  person("Singh", "Shikhar", email = "ss3394@cornell.edu", role = "aut"))
+Author: Geet Chheda [aut, cre],
+  Sagar Shenoy [aut],
+  Animesh Chaturvedi [aut],
+  Ishwari Joshi [aut],
+  Shikhar Singh [aut]
+Maintainer: Geet Chheda <gac222@cornell.edu>
+Description: Package to implement Statistical Process Controls for data of Solar Power Plant
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

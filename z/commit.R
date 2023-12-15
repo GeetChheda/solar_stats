@@ -1,12 +1,13 @@
 #' @name commit
 #' @title `commit.R`
-#' @author Tim Fraser, PhD
+#' @author Geet Chheda, Sagar Shenoy, Animesh Chaturvedi, Ishwari Joshi, Shikhar Singh
 #' @description Helpful script for speedy committing of ALL changes to github. 
 #' Note: BE CAREFUL! Not always a good idea.
 
 # install.packages("credentials")
 # credentials::git_credential_update()
 credentials::set_github_pat()
+
 # This script commits to github.
 require(gert)
 
