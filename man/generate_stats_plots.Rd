@@ -16,11 +16,22 @@ generate_stats_plot(
 )
 }
 \arguments{
-\item{t}{[integer] time passed. Can be a single integer or a vector of integers.}
+\item{file_path}{[.csv] Add a .csv file for your function to read}
 
-\item{lambdas}{[vector] a vector of failure rates for components, named $\lambda$}
+\item{x_var}{[character] Input column name of the independent variable - 
+If using statistical process control with time (date_time) has to be the input variable 
+with a start format of YYYY-MM-DD H:M:SS 
+If understanding the impact then just use the column name}
 
-\item{type}{[character] a single value describing whether these probabilities should be combined using the rules of series or parallel systems.}
+\item{y_var}{[character] Output column which will always be power in most cases}
+
+\item{spec}{[numeric] The specification limit i.e. the minimum power required for the local area}
+
+\item{x_label}{[character] label of x-axis for the plot to be generated}
+
+\item{y_label}{[character] label of y-axis for the plot to be generated}
+
+\item{plot_title}{[character] title for the plot to be generated}
 }
 \description{
 The function takes in input about the solar power data with the parameters of interest being
@@ -28,23 +39,7 @@ solar power output, the time frame for which the data was collected, temperature
 wind speed, wind direction. With this data we can either view the statistical process control
 }
 \note{
-- `@name` 
-- `@title` is the official title and can be anything.
-- `@description` is a description that can span multiple lines
-- `@param` marks each input parameters for your function.
-- `@export` exports your function to be available to a user of your package. (Eg. not an internal function)
-- `@importFrom` bundles into your package 1 or more specific functions from another package, so that your package will always function.
-
 You can specify default inputs for an input parameter like with `type = "series"` below.
-}
-\examples{
-
-# Get series system probability at each time t
-get_prob(t = c(2,4,5,6), lambdas = c(0.001, 0.02), type = "series")
-
-# Get parallel system probability at each time t
-get_prob(t = c(2,4,5,6), lambdas = c(0.001, 0.02), type = "parallel")
-
 }
 \author{
 Geet Chheda, Sagar Shenoy, Animesh Chaturvedi, Ishwari Joshi, Shikhar Singh

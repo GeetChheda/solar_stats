@@ -1,7 +1,7 @@
 #' @name dev.R
-#' @title Example Development Script for building and checking `demotool` package functions
+#' @title Tool to implement Statistical Process Control & understand impact of external factors on Solar Power Output
 #' @author Geet Chheda, Sagar Shenoy, Animesh Chaturvedi, Ishwari Joshi, Shikhar Singh
-#' @description Script for test package building of `demotool` package functions.
+#' @description Script for test package building of `solarstats` package functions.
 
 # Unload your package and uninstall it first.
 unloadNamespace("solarstats"); remove.packages("solarstats")

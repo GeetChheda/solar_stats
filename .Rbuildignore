@@ -7,3 +7,6 @@
 ^solar_stats\.Rcheck$
 ^solar_stats.*\.tar\.gz$
 ^solar_stats.*\.tgz$
+^solarstats\.Rcheck$
+^solarstats.*\.tar\.gz$
+^solarstats.*\.tgz$
