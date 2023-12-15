@@ -19,9 +19,8 @@ generate_stats_plot(
 \item{file_path}{[.csv] Add a .csv file for your function to read}
 
 \item{x_var}{[character] Input column name of the independent variable - 
-If using statistical process control with time (date_time) has to be the input variable 
-with a start format of YYYY-MM-DD H:M:SS 
-If understanding the impact then just use the column name}
+If using statistical process control with time ("date_time") has to be the input variable with a start format of YYYY-MM-DD H:M:SS 
+else to study the impact of other factors on power output use the column name of that specific input}
 
 \item{y_var}{[character] Output column which will always be power in most cases}
 
@@ -37,9 +36,6 @@ If understanding the impact then just use the column name}
 The function takes in input about the solar power data with the parameters of interest being
 solar power output, the time frame for which the data was collected, temperature, pressure,
 wind speed, wind direction. With this data we can either view the statistical process control
-}
-\note{
-You can specify default inputs for an input parameter like with `type = "series"` below.
 }
 \author{
 Geet Chheda, Sagar Shenoy, Animesh Chaturvedi, Ishwari Joshi, Shikhar Singh
